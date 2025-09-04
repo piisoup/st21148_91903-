@@ -1,7 +1,16 @@
+.open-sans-font {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 img {
@@ -36,20 +45,30 @@ img {
   color: white;
 }
 
-.comets {
+.content-celestial-bodies {
   display: flex;
-  float: right;
-  background-color: white;
-  width: 35%;
-  height: 40%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 2rem;
 }
 
+.comets,
 .black-holes {
+  margin: auto;
   display: flex;
-  float: left;
-  background-color: white;
+  flex-direction: column;
+  background-color: rgba(180, 178, 178, 0.75);
+  color: black;
   width: 35%;
-  height: 40%;
+  padding: 10px;
+  border-radius: 20px;
+  gap: 100px;
+}
+
+.comets-slideshow,
+.black-holes-content {
+  padding-bottom: 10px;
 }
 
 .celestial-bodies h1 {
@@ -95,6 +114,7 @@ img {
   padding-bottom: 5px;
   border-width: 1px;
   float: right;
+  font-size: 0.93rem;
 }
 
 .navbar li {
@@ -140,6 +160,11 @@ img {
   text-align: center;
 }
 
+.copyright-info li a {
+  color: white;
+  text-decoration: none;
+}
+
 @media (max-width: 780px) {
   .main-content {
     padding-bottom: 25px;
@@ -158,7 +183,7 @@ img {
   }
 }
 
-@media (max-width: 480) {
+@media (max-width: 480px) {
   .main-content {
     padding-bottom: 25px;
   }
