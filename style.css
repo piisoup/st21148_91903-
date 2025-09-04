@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.homepage {
+  background-image: url("images/earth-1756274.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.content-homepage {
+  position: relative;
+  background-color: rgba(75, 74, 89, 0.5);
+  width: fit-content;
+  top: 400px;
+  left: 30px;
+  padding: 20px;
+}
+
+.celestial-bodies {
+  background-image: url("images/stars-1654074.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  color: white;
+}
+
+.comets {
+  display: flex;
+  float: right;
+  background-color: white;
+  width: 35%;
+  height: 40%;
+}
+
+.black-holes {
+  display: flex;
+  float: left;
+  background-color: white;
+  width: 35%;
+  height: 40%;
+}
+
+.celestial-bodies h1 {
+  font-size: large;
+}
+
+.content-homepage h1 {
+  color: white;
+}
+
+.footer-homepage {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(120, 99, 68, 0.3);
+  color: white;
+  text-align: center;
+  height: 50px;
+  font-size: smaller;
+}
+
+.celestial-bodies-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.79);
+  color: white;
+  text-align: center;
+  height: 50px;
+  font-size: smaller;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: block;
+  width: 25%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  border-width: 1px;
+  float: right;
+}
+
+.navbar li {
+  display: flex;
+  flex-direction: row-reverse;
+  float: right;
+  padding-right: 20px;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar-footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float: left;
+}
+
+.navbar-footer li {
+  float: right;
+  padding-left: 20px;
+}
+
+.navbar-footer li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.copyright-info {
+  float: right;
+  padding: 14px 16px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+@media (max-width: 780px) {
+  .main-content {
+    padding-bottom: 25px;
+  }
+
+  .navbar li a {
+    display: inline-block;
+    flex-direction: column;
+    word-wrap: normal;
+    padding-top: 10px;
+    gap: 10px;
+    font-size: 1em;
+    justify-content: center;
+    text-align: right;
+    padding-right: 0%;
+  }
+}
+
+@media (max-width: 480) {
+  .main-content {
+    padding-bottom: 25px;
+  }
+
+  .navbar li a {
+    display: inline-block;
+    flex-direction: column;
+    word-wrap: normal;
+    padding-top: 10px;
+    gap: 10px;
+    font-size: 1em;
+    justify-content: center;
+    text-align: right;
+    padding-right: 0%;
+  }
+
+  .content-homepage h1 {
+    font-size: small;
+  }
+}
